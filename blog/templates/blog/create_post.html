@@ -1,0 +1,13 @@
+{% extends "base.html" %}
+{% block content %}
+<div class="container mt-5" style="max-width: 500px; margin: 0 auto;">
+    <h2 style="color: #333; font-weight: bold;">Create a New Post</h2>
+    <form method="POST" style="background-color: #f9f9f9; padding: 20px; border: 1px solid #ddd; border-radius: 10px;">
+        {% csrf_token %}
+        <div class="form-group">
+            {{ form.as_p }}
+        </div>
+        <button type="submit" class="btn btn-primary" style="background-color: #4CAF50; color: #fff; padding: 10px 20px; border: none; border-radius: 5px; cursor: pointer;">Post</button>
+    </form>
+</div>
+{% endblock %}

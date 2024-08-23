@@ -1,0 +1,15 @@
+{% extends 'base.html' %}
+
+{% block title %}About{% endblock %}
+
+{% block content %}
+    <h1 style="color: #00698f;">About Page</h1>
+    <p style="font-size: 18px; font-weight: bold;">This is the about page of the blog website.</p>
+    <div style="background-color: #f2f2f2; padding: 20px; border: 1px solid #ddd;"> 
+        <h1 style="color: #00698f;">
+            This is a blog on Django.
+        </h1>
+        <p style="font-size: 16px;">Welcome to our blog! This blog is dedicated to sharing knowledge and experiences on Django, a high-level Python web framework. We will be posting tutorials, tips, and tricks on how to build scalable and efficient web applications using Django.</p>
+        {% comment %} <img src="{% static 'images/django-logo.png' %}" alt="Django Logo" style="width: 100px; height: 100px;"> {% endcomment %}
+    </div>
+{% endblock %}
